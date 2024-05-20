@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Inter", sans-serif;
+    color: white;
+    /* border: 0.5px solid yellow; */
+}
+
+html {
+    @media (max-width: 1600px) {
+        font-size: 80%;
+      }
+    
+      @media (max-width: 1200px) {
+        font-size: 70%;
+      }
+    
+      @media (max-width: 800px) {
+        font-size: 60%;
+      }
+}
+body {
+    padding: 12.5vh 10vw 15vh;
+    /* background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
+    url('../images/background3.jpg'); */
+    background-image: url('../images/background3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.condition-display {
+    font-size: 4rem;
+
+}
+
+.location-display {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.date-display {
+    font-weight: 600;
+}
+
+.temperature-display {
+    margin-top: 1rem;
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+#location {
+    margin-top: 1rem;
+    background: transparent;
+    border-bottom: 2px solid white;
+    padding: 5px 5px;
+    color: white;
+}
+
+input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: white;
+}
+
+.other-div{
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.other-content{
+    font-size: 2rem;
+}
+
+
+.future-info {
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    color: white;
+    font-weight: 600;
+}
+
+.forecast-div{
+    /* background-color: rgb(249, 198, 159); */
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1.5px solid rgb(249, 198, 159);
+}
+.forecast-day-display {
+    padding-bottom: 10px;
+}
+
+.forecast-max-display{
+    padding: 2px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.change-forecast{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.daily, .hourly{
+    background: transparent;
+    padding: 3px 8px;
+    box-sizing: content-box;
+    border-radius: 4px;
+}
+
+.daily{
+    margin-right: 8px;
+    border: 3px solid white;
+}
+
+.forecast-time-display, .forecast-day-display{
+    border-bottom: 1px solid white;
+}
+.forecast-temperature-display{
+    font-size: 2rem;
+    padding: 10px 0px;
+}
